@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantum-response-bodies"
+version = "1.0.0rc1"
+description = "Reproducibility code for fixed-marginal quantum metamaterial response geometry"
+requires-python = ">=3.10"
+authors = [{name = "Yuzhan Zhang"}]
+license = {text = "MIT"}
+dependencies = ["numpy>=1.24", "scipy>=1.10"]
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.7"]
+dev = ["pytest>=7"]
+
+[tool.setuptools]
+package-dir = {"" = "code"}
+
+[tool.setuptools.packages.find]
+where = ["code"]
+include = ["qrb*"]

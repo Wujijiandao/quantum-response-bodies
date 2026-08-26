@@ -1,0 +1,247 @@
+{
+  "model": "equilateral free-space Lehmberg trimer, normal dipoles",
+  "spacing_over_lambda": 0.35,
+  "Gamma12_over_Gamma0": 0.25540786413473576,
+  "Omega12_over_Gamma0": 0.28447601704249503,
+  "scan_interval_Gamma0_t": [
+    0.0,
+    4.0
+  ],
+  "minimum_operational_gap_on_dense_candidate_scan": 0.005882178940935153,
+  "operational_gap_at_conservative_root_0p08838": 0.4372859441741131,
+  "checkpoints": [
+    {
+      "Gamma0_t": 0.0,
+      "h_quantum_exact": 1.9999999999999998,
+      "sector_weights": [
+        0.0,
+        0.5,
+        0.5,
+        0.0
+      ],
+      "sector_maxima": [
+        0.0,
+        1.9999999999999998,
+        1.9999999999999998,
+        0.0
+      ],
+      "h_separable_product_dual": 1.4999999999999996,
+      "h_separable_aligned_equatorial": 1.5,
+      "dual_minus_equatorial": -4.440892098500626e-16,
+      "gap_operational": 0.5000000000000002,
+      "conservative_norm_certificate": 0.5,
+      "dual_lambda": 0.0,
+      "dual_product_argmax": [
+        1.9702527609373696e-08,
+        3.3439102598137874e-09,
+        1.4947064697085787e-08,
+        6.283185307179586,
+        0.0
+      ]
+    },
+    {
+      "Gamma0_t": 0.08838,
+      "h_quantum_exact": 1.8060751903578147,
+      "sector_weights": [
+        0.0,
+        0.5,
+        0.5,
+        0.0
+      ],
+      "sector_maxima": [
+        0.0,
+        1.7500096225065718,
+        1.8621407582090577,
+        0.11446439041476075
+      ],
+      "h_separable_product_dual": 1.3688644414889601,
+      "h_separable_aligned_equatorial": 1.368864441570206,
+      "dual_minus_equatorial": -8.124589889746403e-11,
+      "gap_operational": 0.4372107488688546,
+      "conservative_norm_certificate": 1.9245013143431855e-05,
+      "dual_lambda": -0.08497332229396756,
+      "dual_product_argmax": [
+        -1.1992072550536138e-06,
+        -7.571152784712676e-07,
+        2.518404240702656e-07,
+        1.2939961251847447e-05,
+        1.3546299868940013e-05
+      ]
+    },
+    {
+      "Gamma0_t": 0.25,
+      "h_quantum_exact": 1.4830283897876098,
+      "sector_weights": [
+        0.0,
+        0.5,
+        0.5,
+        0.0
+      ],
+      "sector_maxima": [
+        0.0,
+        1.370866810957802,
+        1.5951899686174174,
+        0.23463080614047999
+      ],
+      "h_separable_product_dual": 1.141600142998911,
+      "h_separable_aligned_equatorial": 1.1416001431082672,
+      "dual_minus_equatorial": -1.0935607974715822e-10,
+      "gap_operational": 0.34142824678869865,
+      "conservative_norm_certificate": -0.7582663780843961,
+      "dual_lambda": -0.1721077364250359,
+      "dual_product_argmax": [
+        1.1848006800319055e-05,
+        4.020640580026935e-06,
+        6.55278724615016e-07,
+        1.2787014306070432e-05,
+        3.1900169972232106e-06
+      ]
+    },
+    {
+      "Gamma0_t": 0.5,
+      "h_quantum_exact": 1.0703645035379328,
+      "sector_weights": [
+        0.0,
+        0.5,
+        0.5,
+        0.0
+      ],
+      "sector_maxima": [
+        0.0,
+        0.9396379066928068,
+        1.2010911003830589,
+        0.27412023138784447
+      ],
+      "h_separable_product_dual": 0.8370384065075913,
+      "h_separable_aligned_equatorial": 0.8370384065769301,
+      "dual_minus_equatorial": -6.933875695835923e-11,
+      "gap_operational": 0.23332609703034146,
+      "conservative_norm_certificate": -1.6207241866143867,
+      "dual_lambda": -0.20084003440428613,
+      "dual_product_argmax": [
+        8.193250891519455e-06,
+        9.881555024238153e-06,
+        -2.8052168981052006e-06,
+        2.3209729587136962e-06,
+        6.283178438002501
+      ]
+    },
+    {
+      "Gamma0_t": 1.0,
+      "h_quantum_exact": 0.527671621227452,
+      "sector_weights": [
+        0.0,
+        0.5,
+        0.5,
+        0.0
+      ],
+      "sector_maxima": [
+        0.0,
+        0.44145969784701966,
+        0.6138835446078844,
+        0.15090758759560186
+      ],
+      "h_separable_product_dual": 0.41461716426169026,
+      "h_separable_aligned_equatorial": 0.41461716437003915,
+      "dual_minus_equatorial": -1.0834888541921828e-10,
+      "gap_operational": 0.11305445696576177,
+      "conservative_norm_certificate": -2.6170806043059613,
+      "dual_lambda": -0.12124928788367494,
+      "dual_product_argmax": [
+        -6.348804430289512e-06,
+        -9.365087057067178e-06,
+        -2.2663283595125705e-05,
+        8.716171306488718e-06,
+        1.3020707988253832e-05
+      ]
+    },
+    {
+      "Gamma0_t": 2.0,
+      "h_quantum_exact": 0.10940916188536629,
+      "sector_weights": [
+        0.0,
+        0.5,
+        0.5,
+        0.0
+      ],
+      "sector_maxima": [
+        0.0,
+        0.09744333241159098,
+        0.12137499135914159,
+        -0.05154413858688463
+      ],
+      "h_separable_product_dual": 0.07561385408635014,
+      "h_separable_aligned_equatorial": 0.0756138540906641,
+      "dual_minus_equatorial": -4.313951973422547e-12,
+      "gap_operational": 0.03379530779901614,
+      "conservative_norm_certificate": -3.305113335176818,
+      "dual_lambda": 0.01035467986475025,
+      "dual_product_argmax": [
+        1.090881430076962e-06,
+        -9.798783485726048e-07,
+        2.055873431938693e-06,
+        6.871264740304639e-06,
+        8.815100281722721e-06
+      ]
+    },
+    {
+      "Gamma0_t": 3.0,
+      "h_quantum_exact": 0.016896753756589174,
+      "sector_weights": [
+        0.0,
+        0.5,
+        0.5,
+        0.0
+      ],
+      "sector_maxima": [
+        0.0,
+        0.02150865204181382,
+        0.012284855471364532,
+        -0.07211612494676298
+      ],
+      "h_separable_product_dual": 0.0036580496987345798,
+      "h_separable_aligned_equatorial": 0.0036580496990965237,
+      "dual_minus_equatorial": -3.619439817303949e-13,
+      "gap_operational": 0.013238704057854593,
+      "conservative_norm_certificate": -3.475430289057272,
+      "dual_lambda": 0.030502470568954616,
+      "dual_product_argmax": [
+        -1.9108514719423653e-06,
+        -4.0575036631684824e-06,
+        -9.98389541928546e-07,
+        6.2831849091857315,
+        6.2831852621517665
+      ]
+    },
+    {
+      "Gamma0_t": 4.0,
+      "h_quantum_exact": -3.164315416817956e-05,
+      "sector_weights": [
+        0.0,
+        0.5,
+        0.5,
+        0.0
+      ],
+      "sector_maxima": [
+        0.0,
+        0.004747601515737901,
+        -0.00481088782407426,
+        -0.04712071783581756
+      ],
+      "h_separable_product_dual": -0.005913822096037815,
+      "h_separable_aligned_equatorial": -0.005913822095103334,
+      "dual_minus_equatorial": -9.344807913591602e-13,
+      "gap_operational": 0.005882178941869635,
+      "conservative_norm_certificate": -3.5096217756481476,
+      "dual_lambda": 0.02125470269086113,
+      "dual_product_argmax": [
+        7.91853034032286e-07,
+        7.419945213804624e-07,
+        6.838515336227147e-07,
+        8.658120394855473e-06,
+        6.283183831634197
+      ]
+    }
+  ],
+  "interpretation": "Quantum support is exact by excitation-sector LP. Separable support at the listed checkpoints is obtained from a global product-numerical-range dual search; the aligned-equatorial construction saturates the dual to numerical tolerance. The dense curve uses that saturated construction between checkpoints."
+}

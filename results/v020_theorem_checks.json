@@ -1,0 +1,89 @@
+{
+  "triangle": {
+    "hQ_ferro": 1.9999999999999996,
+    "hQ_frustrated": 1.0000000000000004,
+    "bell_pair_point_separable": false
+  },
+  "complete_frustrated": [
+    {
+      "N": 3,
+      "hQ_exact": 1.0,
+      "hQ_numeric": 1.0000000000000004,
+      "hSep_exact": 0.75,
+      "hSep_numeric": 0.7499999999999298,
+      "ratio": 1.3333333333333333
+    },
+    {
+      "N": 4,
+      "hQ_exact": 2.0,
+      "hQ_numeric": 1.9999999999999998,
+      "hSep_exact": 1.0,
+      "hSep_numeric": 0.9999999999999988,
+      "ratio": 2.0
+    },
+    {
+      "N": 5,
+      "hQ_exact": 2.0,
+      "hQ_numeric": 2.0000000000000013,
+      "hSep_exact": 1.25,
+      "hSep_numeric": 1.2499999999999787,
+      "ratio": 1.6
+    },
+    {
+      "N": 6,
+      "hQ_exact": 3.0,
+      "hQ_numeric": 3.0000000000000027,
+      "hSep_exact": 1.5,
+      "hSep_numeric": 1.4999999999999902,
+      "ratio": 2.0
+    },
+    {
+      "N": 7,
+      "hQ_exact": 3.0,
+      "hQ_numeric": 3.000000000000008,
+      "hSep_exact": 1.75,
+      "hSep_numeric": 1.7499999999998368,
+      "ratio": 1.7142857142857142
+    },
+    {
+      "N": 8,
+      "hQ_exact": 4.0,
+      "hQ_numeric": 4.000000000000012,
+      "hSep_exact": 2.0,
+      "hSep_numeric": null,
+      "ratio": 2.0
+    }
+  ],
+  "resource_cost": [
+    {
+      "r": 0.5,
+      "N_formula": 0.0,
+      "N_achiever": 0.0
+    },
+    {
+      "r": 0.6,
+      "N_formula": 0.09999999999999998,
+      "N_achiever": 0.09999999999999998
+    },
+    {
+      "r": 0.7,
+      "N_formula": 0.19999999999999996,
+      "N_achiever": 0.19999999999999996
+    },
+    {
+      "r": 0.8,
+      "N_formula": 0.30000000000000004,
+      "N_achiever": 0.30000000000000004
+    },
+    {
+      "r": 0.9,
+      "N_formula": 0.4,
+      "N_achiever": 0.4
+    },
+    {
+      "r": 1.0,
+      "N_formula": 0.5,
+      "N_achiever": 0.5
+    }
+  ]
+}

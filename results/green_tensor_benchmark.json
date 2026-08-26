@@ -1,0 +1,32 @@
+{
+  "0.25": {
+    "Gamma12_over_Gamma0": 0.5679112453529781,
+    "Omega12_over_Gamma0": 0.30396355092701327,
+    "Gamma_eigenvalues_over_Gamma0": [
+      0.43208875464702146,
+      0.432088754647022,
+      2.1358224907059564
+    ],
+    "certified_positive_gap_until_Gamma0_t": 0.06251989254989053
+  },
+  "0.35": {
+    "Gamma12_over_Gamma0": 0.25540786413473576,
+    "Omega12_over_Gamma0": 0.28447601704249503,
+    "Gamma_eigenvalues_over_Gamma0": [
+      0.7445921358652642,
+      0.7445921358652643,
+      1.5108157282694714
+    ],
+    "certified_positive_gap_until_Gamma0_t": 0.08838363946440919
+  },
+  "0.5": {
+    "Gamma12_over_Gamma0": -0.1519817754635066,
+    "Omega12_over_Gamma0": 0.21454376381294338,
+    "Gamma_eigenvalues_over_Gamma0": [
+      0.6960364490729869,
+      1.1519817754635064,
+      1.1519817754635067
+    ],
+    "certified_positive_gap_until_Gamma0_t": 0.1184806179044453
+  }
+}

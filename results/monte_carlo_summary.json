@@ -1,0 +1,11 @@
+{
+  "seed": 20260826,
+  "n_quantum": 20000,
+  "n_separable": 20000,
+  "max_sampled_quantum_radius_unconstrained": 0.7604892487442675,
+  "max_sampled_separable_radius_unconstrained": 0.3859158133693648,
+  "exact_fixed_marginal_quantum_radius": 1.0,
+  "exact_fixed_marginal_separable_radius": 0.5,
+  "exact_area_ratio_quantum_to_separable": 4.0,
+  "exact_hausdorff_radial_gap": 0.5
+}

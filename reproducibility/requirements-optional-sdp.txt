@@ -1,0 +1,3 @@
+# Planned v0.2 extension for exact/relaxed optimization in larger response maps.
+cvxpy>=1.5
+scs>=3.2
