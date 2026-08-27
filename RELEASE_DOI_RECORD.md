@@ -1,11 +1,7 @@
-# Release DOI record
+# Release DOI record - v1.0.0
 
-Release: **v1.0.0**
-Status: **scientifically frozen; DOI pending Zenodo minting**.
+Version DOI: **10.5281/zenodo.22120243**  
+DOI URL: https://doi.org/10.5281/zenodo.22120243  
+GitHub Release: https://github.com/Wujijiandao/quantum-response-bodies/releases/tag/v1.0.0
 
-- GitHub repository: https://github.com/Wujijiandao/quantum-response-bodies
-- GitHub tag: `v1.0.0`
-- Zenodo version DOI: [TO BE FILLED]
-- Zenodo concept DOI: [TO BE FILLED]
-
-The journal manuscript should cite the **version DOI** corresponding exactly to this release. Filling these DOI fields is metadata-only and does not alter the scientific code.
+This is the version-specific DOI cited by the submission-matched manuscript.

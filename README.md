@@ -1,5 +1,7 @@
 # Quantum Response Bodies
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22120243.svg)](https://doi.org/10.5281/zenodo.22120243)
+
 Reproducibility software for **fixed-marginal response geometry in quantum-emitter arrays**.
 
 Author: **Yuzhan Zhang** (Independent Researcher)  
@@ -9,7 +11,7 @@ ORCID: https://orcid.org/0009-0000-3121-7972
 
 **v1.0.0** is the first frozen archival software release corresponding to the scientific content of the manuscript *Fixed-Marginal Response Geometry for Quantum-Emitter Arrays*. It supersedes the RC1/RC2 review candidates.
 
-The scientific content is frozen. The Zenodo version DOI is intentionally not hard-coded in this repository before minting; once Zenodo archives this exact GitHub release, the version DOI should be cited by the submitted manuscript.
+The scientific content is frozen. The exact v1.0.0 release is archived on Zenodo with version DOI **10.5281/zenodo.22120243**.
 
 ## Scope
 
@@ -62,7 +64,7 @@ Historical scientific-freeze notes are retained in `SCIENTIFIC_FREEZE_NOTES.md`.
 
 ## Citation and archival DOI
 
-Citation metadata are provided in `CITATION.cff`. The permanent archival citation should use the **Zenodo version DOI for v1.0.0** after it has been minted. `RELEASE_DOI_RECORD.md` is provided as a place to record both the version DOI and concept DOI without changing scientific code.
+Citation metadata are provided in `CITATION.cff`. The version-specific archival citation for this release is **10.5281/zenodo.22120243**. The manuscript cites this DOI in its Data Availability statement.
 
 ## License
 

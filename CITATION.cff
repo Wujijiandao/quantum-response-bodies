@@ -3,6 +3,8 @@ message: "If you use this software or reproducibility package, please cite the Z
 title: "Quantum Response Bodies: reproducibility software for fixed-marginal response geometry in quantum-emitter arrays"
 type: software
 version: 1.0.0
+doi: "10.5281/zenodo.22120243"
+url: "https://doi.org/10.5281/zenodo.22120243"
 date-released: 2026-08-27
 license: MIT
 authors:

@@ -42,5 +42,6 @@ GitHub repository: https://github.com/Wujijiandao/quantum-response-bodies
 
 ## DOI fields after minting
 
-Version DOI: [TO BE FILLED AFTER ZENODO ARCHIVES v1.0.0]  
-Concept DOI: [TO BE FILLED AFTER ZENODO ARCHIVES v1.0.0]
+Version DOI: 10.5281/zenodo.22120243  
+DOI URL: https://doi.org/10.5281/zenodo.22120243  
+Concept DOI: record separately if desired; the manuscript uses the version DOI.
