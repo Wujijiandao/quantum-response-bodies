@@ -89,7 +89,7 @@ Keep `submission/`, private review notes, referee strategy, and draft cover lett
 ## Final release checklist
 
 1. Run `python reproducibility/run_all.py` from a fresh environment.
-2. Confirm the final line is `ALL v1.0 REPRODUCIBILITY CHECKS PASSED` (update runner version text before release).
+2. Confirm the final line is `ALL v1.0.0 REPRODUCIBILITY CHECKS PASSED` (update runner version text before release).
 3. Verify `CITATION.cff` with a CFF validator.
 4. Confirm ORCID and creator spelling.
 5. Confirm the code license.

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "quantum-response-bodies"
-version = "1.0.0rc1"
-description = "Reproducibility code for fixed-marginal quantum metamaterial response geometry"
+version = "1.0.0"
+description = "Reproducibility code for fixed-marginal quantum-emitter response geometry"
 requires-python = ">=3.10"
 authors = [{name = "Yuzhan Zhang"}]
 license = {text = "MIT"}

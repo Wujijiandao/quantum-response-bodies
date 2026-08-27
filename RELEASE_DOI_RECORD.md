@@ -1,15 +1,11 @@
 # Release DOI record
 
-Current state: **pre-release candidate; no DOI minted yet**.
+Release: **v1.0.0**
+Status: **scientifically frozen; DOI pending Zenodo minting**.
 
-- Planned GitHub repository: `quantum-response-bodies`
-- Current package: `v1.0.0-rc1`
-- Final archival GitHub release/tag: `v1.0.0`
-- Release commit SHA: `[TO FILL]`
-- Zenodo version DOI: `[TO FILL]`
-- Zenodo concept DOI: `[TO FILL]`
-- Zenodo record ID: `[TO FILL]`
-- Archive date: `[TO FILL]`
-- SHA-256 manifest attached to release: `[TO FILL]`
+- GitHub repository: https://github.com/Wujijiandao/quantum-response-bodies
+- GitHub tag: `v1.0.0`
+- Zenodo version DOI: [TO BE FILLED]
+- Zenodo concept DOI: [TO BE FILLED]
 
-The manuscript should cite the **version DOI** corresponding to the exact submitted code. The concept DOI is appropriate for the evolving project badge/readme after the first archival release.
+The journal manuscript should cite the **version DOI** corresponding exactly to this release. Filling these DOI fields is metadata-only and does not alter the scientific code.

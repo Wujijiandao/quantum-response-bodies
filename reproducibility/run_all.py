@@ -12,6 +12,7 @@ commands = [
     [sys.executable, str(CODE / "tests/test_v040_green_tensor.py")],
     [sys.executable, str(CODE / "tests/test_v050_operational_support.py")],
     [sys.executable, str(CODE / "tests/test_v060_freeze.py")],
+    [sys.executable, str(CODE / "tests/test_v070_operational_claims.py")],
     [sys.executable, str(CODE / "scripts/generate_figures.py")],
     [sys.executable, str(CODE / "scripts/generate_v020_figures.py")],
     [sys.executable, str(CODE / "scripts/generate_v030_figures.py")],
@@ -24,4 +25,4 @@ for command in commands:
     print("RUN", " ".join(map(str, command)))
     subprocess.run(command, cwd=CODE, check=True)
 
-print("ALL v1.0.0-rc1 REPRODUCIBILITY CHECKS PASSED")
+print("ALL v1.0.0 REPRODUCIBILITY CHECKS PASSED")

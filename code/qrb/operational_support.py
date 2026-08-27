@@ -158,7 +158,7 @@ def equatorial_stationary_dual_check_three(A, seed=123, inner_tol=2e-9, maxiter=
     with respect to each z_i is gamma+d, where gamma is the coefficient of ZII
     and d the coefficient of XXZ (equal to YYZ and permutations by symmetry).
     Since the dual constraint uses m=(z1+z2+z3)/3, stationarity fixes
-    lambda=3(gamma+d).  A global product-state maximization then tests whether
+    lambda=3(gamma+d).  A nonconvex product-state maximization then tests whether
     the equatorial construction saturates the separable dual.
     """
     coeff = pauli_coefficients_three(A)

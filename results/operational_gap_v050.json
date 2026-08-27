@@ -7,8 +7,8 @@
     0.0,
     4.0
   ],
-  "minimum_operational_gap_on_dense_candidate_scan": 0.005882178940935153,
-  "operational_gap_at_conservative_root_0p08838": 0.4372859441741131,
+  "minimum_aligned_equatorial_gap_candidate_on_dense_scan": 0.005882178940935153,
+  "aligned_equatorial_gap_candidate_at_conservative_root_0p08838": 0.4372859441741131,
   "checkpoints": [
     {
       "Gamma0_t": 0.0,
@@ -25,10 +25,10 @@
         1.9999999999999998,
         0.0
       ],
-      "h_separable_product_dual": 1.4999999999999996,
+      "h_separable_product_dual_numerical": 1.4999999999999996,
       "h_separable_aligned_equatorial": 1.5,
       "dual_minus_equatorial": -4.440892098500626e-16,
-      "gap_operational": 0.5000000000000002,
+      "gap_product_dual_numerical": 0.5000000000000002,
       "conservative_norm_certificate": 0.5,
       "dual_lambda": 0.0,
       "dual_product_argmax": [
@@ -37,7 +37,18 @@
         1.4947064697085787e-08,
         6.283185307179586,
         0.0
-      ]
+      ],
+      "multistart_seeds": [
+        20260826,
+        20260827,
+        20260828
+      ],
+      "multistart_support_values": [
+        1.4999999999999996,
+        1.4999999999347204,
+        1.4999999999540443
+      ],
+      "multistart_spread": 6.527911544651488e-11
     },
     {
       "Gamma0_t": 0.08838,
@@ -54,19 +65,30 @@
         1.8621407582090577,
         0.11446439041476075
       ],
-      "h_separable_product_dual": 1.3688644414889601,
+      "h_separable_product_dual_numerical": 1.3688644415587323,
       "h_separable_aligned_equatorial": 1.368864441570206,
-      "dual_minus_equatorial": -8.124589889746403e-11,
-      "gap_operational": 0.4372107488688546,
+      "dual_minus_equatorial": -1.1473710870291143e-11,
+      "gap_product_dual_numerical": 0.4372107487990824,
       "conservative_norm_certificate": 1.9245013143431855e-05,
       "dual_lambda": -0.08497332229396756,
       "dual_product_argmax": [
-        -1.1992072550536138e-06,
-        -7.571152784712676e-07,
-        2.518404240702656e-07,
-        1.2939961251847447e-05,
-        1.3546299868940013e-05
-      ]
+        1.691858529942577e-06,
+        6.561622341027787e-07,
+        1.3326539716199823e-07,
+        5.353075545055958e-06,
+        2.0790153780757777e-06
+      ],
+      "multistart_seeds": [
+        20260826,
+        20260827,
+        20260828
+      ],
+      "multistart_support_values": [
+        1.3688644414889601,
+        1.368864441497607,
+        1.3688644415587323
+      ],
+      "multistart_spread": 6.977218802717289e-11
     },
     {
       "Gamma0_t": 0.25,
@@ -83,19 +105,30 @@
         1.5951899686174174,
         0.23463080614047999
       ],
-      "h_separable_product_dual": 1.141600142998911,
+      "h_separable_product_dual_numerical": 1.1416001430515936,
       "h_separable_aligned_equatorial": 1.1416001431082672,
-      "dual_minus_equatorial": -1.0935607974715822e-10,
-      "gap_operational": 0.34142824678869865,
+      "dual_minus_equatorial": -5.6673554738040366e-11,
+      "gap_product_dual_numerical": 0.3414282467360161,
       "conservative_norm_certificate": -0.7582663780843961,
       "dual_lambda": -0.1721077364250359,
       "dual_product_argmax": [
-        1.1848006800319055e-05,
-        4.020640580026935e-06,
-        6.55278724615016e-07,
-        1.2787014306070432e-05,
-        3.1900169972232106e-06
-      ]
+        -2.0414333634644066e-07,
+        5.36881696144853e-06,
+        -4.3571935415265273e-07,
+        2.7137648324071506e-06,
+        6.283176092218577
+      ],
+      "multistart_seeds": [
+        20260826,
+        20260827,
+        20260828
+      ],
+      "multistart_support_values": [
+        1.141600142998911,
+        1.1416001429394567,
+        1.1416001430515936
+      ],
+      "multistart_spread": 1.1213696637923931e-10
     },
     {
       "Gamma0_t": 0.5,
@@ -112,19 +145,30 @@
         1.2010911003830589,
         0.27412023138784447
       ],
-      "h_separable_product_dual": 0.8370384065075913,
+      "h_separable_product_dual_numerical": 0.8370384065276383,
       "h_separable_aligned_equatorial": 0.8370384065769301,
-      "dual_minus_equatorial": -6.933875695835923e-11,
-      "gap_operational": 0.23332609703034146,
+      "dual_minus_equatorial": -4.929179286961016e-11,
+      "gap_product_dual_numerical": 0.2333260970102945,
       "conservative_norm_certificate": -1.6207241866143867,
       "dual_lambda": -0.20084003440428613,
       "dual_product_argmax": [
-        8.193250891519455e-06,
-        9.881555024238153e-06,
-        -2.8052168981052006e-06,
-        2.3209729587136962e-06,
-        6.283178438002501
-      ]
+        6.573024068590172e-06,
+        8.660467277321615e-06,
+        -3.294439123724402e-06,
+        4.076951426235098e-06,
+        7.216146417299285e-06
+      ],
+      "multistart_seeds": [
+        20260826,
+        20260827,
+        20260828
+      ],
+      "multistart_support_values": [
+        0.8370384065075913,
+        0.8370384064423213,
+        0.8370384065276383
+      ],
+      "multistart_spread": 8.531697570646202e-11
     },
     {
       "Gamma0_t": 1.0,
@@ -141,10 +185,10 @@
         0.6138835446078844,
         0.15090758759560186
       ],
-      "h_separable_product_dual": 0.41461716426169026,
+      "h_separable_product_dual_numerical": 0.41461716426169026,
       "h_separable_aligned_equatorial": 0.41461716437003915,
       "dual_minus_equatorial": -1.0834888541921828e-10,
-      "gap_operational": 0.11305445696576177,
+      "gap_product_dual_numerical": 0.11305445696576177,
       "conservative_norm_certificate": -2.6170806043059613,
       "dual_lambda": -0.12124928788367494,
       "dual_product_argmax": [
@@ -153,7 +197,18 @@
         -2.2663283595125705e-05,
         8.716171306488718e-06,
         1.3020707988253832e-05
-      ]
+      ],
+      "multistart_seeds": [
+        20260826,
+        20260827,
+        20260828
+      ],
+      "multistart_support_values": [
+        0.41461716426169026,
+        0.41461716421455314,
+        0.41461716424980144
+      ],
+      "multistart_spread": 4.713712753456889e-11
     },
     {
       "Gamma0_t": 2.0,
@@ -170,10 +225,10 @@
         0.12137499135914159,
         -0.05154413858688463
       ],
-      "h_separable_product_dual": 0.07561385408635014,
+      "h_separable_product_dual_numerical": 0.07561385408635014,
       "h_separable_aligned_equatorial": 0.0756138540906641,
       "dual_minus_equatorial": -4.313951973422547e-12,
-      "gap_operational": 0.03379530779901614,
+      "gap_product_dual_numerical": 0.03379530779901614,
       "conservative_norm_certificate": -3.305113335176818,
       "dual_lambda": 0.01035467986475025,
       "dual_product_argmax": [
@@ -182,7 +237,18 @@
         2.055873431938693e-06,
         6.871264740304639e-06,
         8.815100281722721e-06
-      ]
+      ],
+      "multistart_seeds": [
+        20260826,
+        20260827,
+        20260828
+      ],
+      "multistart_support_values": [
+        0.07561385408635014,
+        0.07561385406936591,
+        0.07561385406943943
+      ],
+      "multistart_spread": 1.6984233464079068e-11
     },
     {
       "Gamma0_t": 3.0,
@@ -199,10 +265,10 @@
         0.012284855471364532,
         -0.07211612494676298
       ],
-      "h_separable_product_dual": 0.0036580496987345798,
+      "h_separable_product_dual_numerical": 0.0036580496987345798,
       "h_separable_aligned_equatorial": 0.0036580496990965237,
       "dual_minus_equatorial": -3.619439817303949e-13,
-      "gap_operational": 0.013238704057854593,
+      "gap_product_dual_numerical": 0.013238704057854593,
       "conservative_norm_certificate": -3.475430289057272,
       "dual_lambda": 0.030502470568954616,
       "dual_product_argmax": [
@@ -211,7 +277,18 @@
         -9.98389541928546e-07,
         6.2831849091857315,
         6.2831852621517665
-      ]
+      ],
+      "multistart_seeds": [
+        20260826,
+        20260827,
+        20260828
+      ],
+      "multistart_support_values": [
+        0.0036580496987345798,
+        0.0036580496978557042,
+        0.0036580496982187524
+      ],
+      "multistart_spread": 8.788755313793306e-13
     },
     {
       "Gamma0_t": 4.0,
@@ -228,10 +305,10 @@
         -0.00481088782407426,
         -0.04712071783581756
       ],
-      "h_separable_product_dual": -0.005913822096037815,
+      "h_separable_product_dual_numerical": -0.005913822096037815,
       "h_separable_aligned_equatorial": -0.005913822095103334,
       "dual_minus_equatorial": -9.344807913591602e-13,
-      "gap_operational": 0.005882178941869635,
+      "gap_product_dual_numerical": 0.005882178941869635,
       "conservative_norm_certificate": -3.5096217756481476,
       "dual_lambda": 0.02125470269086113,
       "dual_product_argmax": [
@@ -240,8 +317,19 @@
         6.838515336227147e-07,
         8.658120394855473e-06,
         6.283183831634197
-      ]
+      ],
+      "multistart_seeds": [
+        20260826,
+        20260827,
+        20260828
+      ],
+      "multistart_support_values": [
+        -0.005913822096037815,
+        -0.00591382209706386,
+        -0.0059138220961532295
+      ],
+      "multistart_spread": 1.026045567953382e-12
     }
   ],
-  "interpretation": "Quantum support is exact by excitation-sector LP. Separable support at the listed checkpoints is obtained from a global product-numerical-range dual search; the aligned-equatorial construction saturates the dual to numerical tolerance. The dense curve uses that saturated construction between checkpoints."
+  "interpretation": "Quantum support is exact by excitation-sector LP. Separable support at the listed checkpoints is estimated by three independent differential-evolution starts of the product-numerical-range dual. The aligned-equatorial construction agrees with those searches to numerical tolerance at the listed checkpoints. The dense solid curve uses the aligned-equatorial construction between checkpoints and is not a formal global certificate."
 }

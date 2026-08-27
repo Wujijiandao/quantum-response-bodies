@@ -1,18 +1,21 @@
 cff-version: 1.2.0
-message: "If you use this software or reproducibility package, please cite the archived version and the associated paper when available. This file describes a pre-release candidate; use the final Zenodo-backed v1.0.0 record after publication of the submission artifact."
-title: "Quantum Response Bodies: reproducibility software for fixed-marginal quantum metamaterial scattering"
+message: "If you use this software or reproducibility package, please cite the Zenodo-archived v1.0.0 release and the associated paper when available."
+title: "Quantum Response Bodies: reproducibility software for fixed-marginal response geometry in quantum-emitter arrays"
 type: software
-version: 1.0.0-rc1
+version: 1.0.0
 date-released: 2026-08-27
 license: MIT
 authors:
   - family-names: Zhang
     given-names: Yuzhan
     orcid: "https://orcid.org/0009-0000-3121-7972"
+repository-code: "https://github.com/Wujijiandao/quantum-response-bodies"
 keywords:
-  - quantum metamaterials
+  - quantum emitter arrays
   - quantum optics
+  - quantum metamaterials
   - entanglement
   - convex geometry
+  - quantum resource theory
   - atomic arrays
   - reproducibility

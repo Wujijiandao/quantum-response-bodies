@@ -1,22 +1,33 @@
-# Operational-support numerical method (v1.0.0-rc1)
+# Numerical methods
 
-For the equilateral three-emitter Lehmberg benchmark, the Heisenberg effective observable is
+## Deterministic regression suite
 
-`B(t) = exp(L^dagger t)[B]`, with `B = O12 + O13 + O23`.
+Run:
 
-## Quantum support
+```bash
+python reproducibility/run_all.py
+```
 
-Because the benchmark is permutation symmetric and U(1)-covariant, `B(t)` is block diagonal in total excitation number. For each sector `k=0,1,2,3`, the code computes its largest eigenvalue `a_k(t)`. The fixed local marginals `I/2` are then enforced exactly by a four-variable linear program over excitation-sector weights with mean excitation `3/2`.
+This executes exact-response checks, analytic theorem regressions, the calibrated input-output reconstruction tests, Green-tensor benchmark checks, noisy-support consistency tests, v0.6 proof-sensitive freeze tests, v0.7 operational-claim tests, and deterministic figure generation.
 
-## Separable support
+## Operational Green-tensor support calculation
 
-Permutation averaging and global U(1) twirling reduce the fixed-marginal separable problem to a convex dual over the mean longitudinal Bloch component. The remaining inner optimization is the product numerical range of a three-qubit Hermitian operator. It is solved by SciPy differential evolution over three Bloch `z` coordinates and two independent relative phases.
+Run separately:
 
-For the reported `d=0.35 lambda` benchmark, the aligned-equatorial phase-twirled separable construction saturates the product dual at all eight reported checkpoints on `0 <= Gamma0 t <= 4`, with the largest absolute numerical residual below `1.1e-10`.
+```bash
+python code/scripts/generate_v050_operational_support.py
+```
 
-The code therefore distinguishes exact analytic/model reductions from the numerical global search used to evaluate the product numerical range. The latter is reproducible but should not be described as a formal computer-assisted proof.
+For the permutation-symmetric equilateral trimer, the fixed-marginal quantum support is evaluated exactly by excitation-sector spectral optimization and a small linear program. The separable problem is reduced by convex duality to a product numerical range. Its remaining nonconvex product-state maximization is evaluated with differential evolution using the fixed seeds
 
+```text
+20260826, 20260827, 20260828
+```
 
-## v0.6 freeze-time independent rechecks
+at each reported checkpoint. The JSON result records each multistart value and their spread.
 
-At `Gamma0 t = 0.08838, 1, 2, 4`, the product-dual inner optimization was repeated with two distinct fixed seeds. Both searches reproduced the aligned-equatorial dual value to approximately `1e-10` or better. These checks are included as a robustness audit of the reported numerical branch, not as a formal certificate for all continuous times.
+The manuscript intentionally describes this separable component as a reproducible multistart numerical estimate, not as a formal continuous-time global-optimality certificate.
+
+## Environment
+
+The core suite uses NumPy, SciPy and Matplotlib. Exact package versions can be installed from `reproducibility/requirements.txt`; project metadata are in `pyproject.toml`.

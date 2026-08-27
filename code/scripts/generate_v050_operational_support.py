@@ -27,7 +27,7 @@ L = lindblad_superoperator(H, jumps)
 Ld = L.conj().T
 
 # Dense operational curve.  The separable curve is the aligned-equatorial
-# candidate; global product-dual checks below verify it at representative times.
+# candidate; multistart product-dual checks below test it at representative times.
 times = np.linspace(0.0, 4.0, 161)
 traj = expm_multiply(Ld, vec(B), start=float(times[0]), stop=float(times[-1]), num=len(times), endpoint=True)
 hq=[]; hsep=[]; gap=[]; cert=[]
@@ -46,19 +46,28 @@ for t in check_times:
     from qrb.input_output import effective_observable
     A = effective_observable(B, float(t), H=H, jumps=jumps)
     q,w,a = quantum_support_symmetric_three(A)
-    dual = equatorial_stationary_dual_check_three(A, seed=20260826, maxiter=350)
+    seeds = [20260826, 20260827, 20260828]
+    dual_runs = [equatorial_stationary_dual_check_three(A, seed=sd, maxiter=350) for sd in seeds]
+    # The inner task is a maximization, so the largest value found across starts
+    # is the most conservative numerical estimate of the dual branch. This is
+    # still not a formal global-optimality certificate.
+    dual = max(dual_runs, key=lambda d: d['support_upper_numerical'])
+    vals = [float(d['support_upper_numerical']) for d in dual_runs]
     checks.append({
         'Gamma0_t': float(t),
         'h_quantum_exact': float(q),
         'sector_weights': [float(x) for x in w],
         'sector_maxima': [float(x) for x in a],
-        'h_separable_product_dual': float(dual['support_upper_numerical']),
+        'h_separable_product_dual_numerical': float(dual['support_upper_numerical']),
         'h_separable_aligned_equatorial': float(dual['aligned_equatorial']),
         'dual_minus_equatorial': float(dual['dual_minus_equatorial']),
-        'gap_operational': float(q-dual['support_upper_numerical']),
+        'gap_product_dual_numerical': float(q-dual['support_upper_numerical']),
         'conservative_norm_certificate': float(0.5-2*np.linalg.norm(A-B,2)),
         'dual_lambda': float(dual['lambda']),
         'dual_product_argmax': [float(x) for x in dual['product_argmax']],
+        'multistart_seeds': seeds,
+        'multistart_support_values': vals,
+        'multistart_spread': float(max(vals)-min(vals)),
     })
 
 summary={
@@ -67,26 +76,27 @@ summary={
     'Gamma12_over_Gamma0': float(Gamma[0,1]),
     'Omega12_over_Gamma0': float(Omega[0,1]),
     'scan_interval_Gamma0_t': [float(times[0]), float(times[-1])],
-    'minimum_operational_gap_on_dense_candidate_scan': float(gap.min()),
-    'operational_gap_at_conservative_root_0p08838': float(np.interp(0.08838,times,gap)),
+    'minimum_aligned_equatorial_gap_candidate_on_dense_scan': float(gap.min()),
+    'aligned_equatorial_gap_candidate_at_conservative_root_0p08838': float(np.interp(0.08838,times,gap)),
     'checkpoints': checks,
     'interpretation': (
         'Quantum support is exact by excitation-sector LP. Separable support at the listed '
-        'checkpoints is obtained from a global product-numerical-range dual search; the '
-        'aligned-equatorial construction saturates the dual to numerical tolerance. The dense '
-        'curve uses that saturated construction between checkpoints.'
+        'checkpoints is estimated by three independent differential-evolution starts of the '
+        'product-numerical-range dual. The aligned-equatorial construction agrees with those '
+        'searches to numerical tolerance at the listed checkpoints. The dense solid curve uses '
+        'the aligned-equatorial construction between checkpoints and is not a formal global certificate.'
     ),
 }
 (resdir/'operational_gap_v050.json').write_text(json.dumps(summary,indent=2),encoding='utf-8')
 
 plt.figure(figsize=(5.35,3.65))
-plt.plot(times, gap, label='optimized operational gap')
+plt.plot(times, gap, label='aligned-equatorial gap candidate')
 plt.plot(times, cert, linestyle='--', label='norm certificate')
 plt.axhline(0.0, linewidth=0.8)
-ct=np.array([x['Gamma0_t'] for x in checks]); cg=np.array([x['gap_operational'] for x in checks])
-plt.scatter(ct,cg,s=18,label='product-dual checks')
+ct=np.array([x['Gamma0_t'] for x in checks]); cg=np.array([x['gap_product_dual_numerical'] for x in checks])
+plt.scatter(ct,cg,s=18,label='multistart product-dual estimates')
 plt.xlabel(r'$\Gamma_0 t$')
-plt.ylabel(r'$h_Q-h_{\rm sep}$')
+plt.ylabel('response-gap estimate')
 plt.xlim(0,4)
 plt.ylim(-0.08,0.55)
 plt.legend(frameon=False,fontsize=8)
